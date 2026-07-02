@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Teacher Audit — Landing Page
+
+The official landing page for [Teacher Audit](https://github.com/Farhan-Shaikh-25/TeacherAudit), a Flutter-based time tracking app built for teachers.
+
+Built with **Next.js 14 (App Router)** and **Tailwind CSS**.
+
+[Live Link](https://teacher-audit.vercel.app)
+
+---
+
+## Pages
+
+- `/` — Hero section with download links
+- `/about` — The backstory and why I built it
+- `/features` — Key features breakdown
+- `/contact` — Contact form powered by Resend
+
+---
+
+## Tech Stack
+
+| | |
+|---|---|
+| Framework | Next.js 14 (App Router) |
+| Styling | Tailwind CSS |
+| Email | Resend |
+| Deployment | Vercel |
+
+---
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Clone the repo
+git clone https://github.com/Farhan-Shaikh-25/TeacherAuditLandingPage.git
+
+# Install dependencies
+cd TeacherAuditLandingPage
+npm install
+
+# Add your environment variable
+cp .env.example .env.local
+# Then add your Resend API key to .env.local
+
+# Run locally
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see it.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Environment Variables
 
-## Learn More
+Create a `.env.local` file in the root:
 
-To learn more about Next.js, take a look at the following resources:
+```
+API_KEY=your_resend_api_key_here
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Get your API key at [resend.com](https://resend.com).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deployed on Vercel. Any push to `main` triggers an automatic redeploy.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Make sure to add `API_KEY` in your Vercel project's environment variables before deploying.
+
+---
+
+## Related
+
+- [Teacher Audit App](https://github.com/Farhan-Shaikh-25/TeacherAudit) — the actual Flutter app this landing page is for
+
+---
+
+## Author
+
+**Mohammed Farhan Shaikh**
+- Portfolio: [portfolio-farhan-25.vercel.app](https://portfolio-farhan-25.vercel.app)
+- GitHub: [@Farhan-Shaikh-25](https://github.com/Farhan-Shaikh-25)
+- LinkedIn: [mohammed-farhan-shaikh25](https://www.linkedin.com/in/mohammed-farhan-shaikh25)
